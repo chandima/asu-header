@@ -1,0 +1,9 @@
+<ul id="asu_footer" {% if site.footerclass %}class="{{ site.footerclass }}"{% else %}class="asu_black_footer"{% endif %}>
+{% for menuitem in site.data.footermenu %}
+  <li {% if menuitem.class %}class="{{ menuitem.class }}"{% endif %}>
+    <a {% if menuitem.target %}target="{{ menuitem.target }}"{% endif %} href="{{ menuitem.href }}">
+      {{ menuitem.text | xml_escape }}
+    </a>
+  </li>
+{% endfor %}
+</ul>

@@ -1,0 +1,123 @@
+--- # ASU header navigation menu items
+- text: "ASU Home"
+  target: _top
+  href: "http://www.asu.edu/"
+  class: home
+- text: "My ASU"
+  target: _top
+  href: "https://my.asu.edu/"
+  class: myasu
+- text: "Colleges & Schools"
+  target: _top
+  href: "http://www.asu.edu/colleges/"
+  class: "parent colleges"
+  submenu:
+   - target: _top
+     class: first
+     href: "http://artsandsciences.asu.edu/"
+     title: "Arts and Sciences website"
+     text: "Arts and Sciences"
+   - target: _top
+     href: "http://wpcarey.asu.edu/"
+     title: "W. P. Carey School of Business Web  and Morrison School of Agribusiness website"
+     text: Business
+   - target: _top
+     href: "http://herbergerinstitute.asu.edu"
+     title: "Herberger Institute for Design and the Arts website"
+     text: "Design and the Arts"
+   - target: _top
+     href: "http://education.asu.edu/"
+     title: "Mary Lou Fulton Teachers College website"
+     text: "Education"
+   - target: _top
+     href: "http://engineering.asu.edu/"
+     title: "Engineering website"
+     text: Engineering
+   - target: _top
+     href: "http://graduate.asu.edu"
+     title: "Graduate College website"
+     text: Graduate
+   - target: _top
+     href: "https://chs.asu.edu/"
+     title: "Health Solutions website"
+     text: "Health Solutions"
+   - target: _top
+     href: "http://honors.asu.edu/"
+     title: "Barrett, The Honors College website"
+     text: Honors
+   - target: _top
+     href: "http://cronkite.asu.edu"
+     title: "Walter Cronkite School of Journalism and Mass Communication website"
+     text: Journalism
+   - target: _top
+     href: "http://www.law.asu.edu/"
+     title: "Sandra Day O' Connor College of Law website"
+     text: Law
+   - target: _top
+     href: "http://nursingandhealth.asu.edu/"
+     title: "College of Nursing and Health Innovation website"
+     text: "Nursing and Health Innovation"
+   - target: _top
+     href: "http://copp.asu.edu"
+     title: "College of Public Programs website"
+     text: "Public Programs"
+   - target: _top
+     href: "http://schoolofsustainability.asu.edu"
+     title: "School of Sustainability website"
+     text: Sustainability
+   - target: _top
+     href: "http://uc.asu.edu/"
+     title: "University College website"
+     text: "University College"
+     class: "parent colleges"
+- text: "Map & Locations"
+  target: _top
+  href: "http://www.asu.edu/map/"
+  class: "parent map"
+  submenu:
+   - target: _top
+     class: "border first"
+     href: "http://www.asu.edu/map/"
+     text: Map
+   - target: _top
+     href: "http://campus.asu.edu/tempe/"
+     title: "Tempe campus"
+     text: Tempe
+   - target: _top
+     href: "http://campus.asu.edu/west/"
+     title: "West campus"
+     text: West
+   - target: _top
+     href: "http://campus.asu.edu/polytechnic/"
+     title: "Polytechnic campus"
+     text: Polytechnic
+   - target: _top
+     href: "http://campus.asu.edu/downtown/"
+     title: "Downtown Phoenix campus"
+     text: "Downtown Phoenix"
+   - target: _top
+     href: "http://asuonline.asu.edu/"
+     title: "Online and Extended campus"
+     text: "Online and Extended"
+   - target: _top
+     class: border
+     href: "http://havasu.asu.edu/"
+     text: "Lake Havasu"
+   - target: _top
+     href: "http://skysong.asu.edu/"
+     text: Skysong
+   - target: _top
+     href: "http://asuresearchpark.com/"
+     text: "Research Park"
+   - target: _top
+     href: "http://washingtoncenter.asu.edu/"
+     text: "Washington D.C."
+   - target: _top
+     href: "http://wpcarey.asu.edu/mba/china-program/english/"
+     text: China
+     class: "parent map"
+- target: _top
+  href: "http://www.asu.edu/contactasu/"
+  title: "Directory, Index and other info"
+  text: Directory
+  class: contact

@@ -1,0 +1,969 @@
+html, body {
+  margin: 0;
+  padding: 0; }
+
+.page-content {
+  padding: 1em; }
+
+/*
+ *  ASU Header  /asuthemes/4.0-rsp-up.0/css
+ */
+/* =Header Styles
+--------------------------------------------------------- */
+#asu_hdr {
+  position: relative;
+  display: block;
+  overflow: visible !important;
+  min-width: 300px;
+  height: 60px;
+  margin: 0 0 0 0;
+  padding: 0 22px 0 0;
+  font-size: 12px;
+  font-family: Arial, Helvetica, sans-serif;
+  line-height: 1em;
+  color: #000;
+  z-index: 500; }
+
+#asu_hdr img {
+  border: 0; }
+
+#asu_logo {
+  margin: 0;
+  padding-left: 22px;
+  display: block;
+  min-width: 203px; }
+
+#asu_mobile_button,
+#asu_print_logo {
+  display: none; }
+
+/* =Universal Nav
+------------------------------------------------------ */
+#asu_nav_wrapper {
+  margin: 0;
+  display: block;
+  z-index: 100; }
+
+#asu_nav_menu {
+  position: relative;
+  float: right;
+  display: inline-block;
+  margin: 0 auto;
+  text-align: center;
+  z-index: 100; }
+
+#asu_universal_nav ul {
+  margin: 0;
+  list-style: none;
+  white-space: nowrap;
+  text-align: left;
+  display: inline-block;
+  background-color: transparent;
+  padding: 0; }
+
+#asu_universal_nav ul {
+  display: inline; }
+
+#asu_universal_nav li {
+  margin: 0;
+  padding: 0;
+  list-style: none; }
+
+#asu_universal_nav li {
+  display: inline; }
+
+#asu_universal_nav ul ul {
+  position: absolute;
+  left: 0;
+  display: none;
+  background-color: #fff;
+  padding-top: 10px;
+  -moz-box-shadow: 0px 3px 3px 0px #999;
+  -webkit-box-shadow: 0px 3px 3px 0px #999;
+  box-shadow: 0px 3px 3px 0px #999;
+  /* IE8 and lower */
+  zoom: 1;
+  filter: progid:DXImageTransform.Microsoft.Shadow(color=#dddddd,direction=135,strength=5), progid:DXImageTransform.Microsoft.Shadow(color=#dddddd,direction=225,strength=5); }
+
+#asu_universal_nav > ul {
+  display: table;
+  margin: 0 auto; }
+
+#asu_universal_nav > ul > li {
+  float: left;
+  display: block;
+  position: relative;
+  z-index: 100; }
+
+#asu_universal_nav > ul > li:hover {
+  display: inline-block;
+  z-index: 10; }
+
+#asu_universal_nav ul a {
+  display: block;
+  font: 12px/12px Arial,Helvetica,sans-serif;
+  color: #000;
+  text-decoration: none;
+  padding: 8px 8px 5px 8px; }
+
+#asu_universal_nav ul ul a {
+  padding: 0;
+  margin: 5px 10px;
+  line-height: 20px; }
+
+#asu_universal_nav ul li:hover > ul {
+  display: block;
+  top: 20px;
+  z-index: -1; }
+
+#asu_universal_nav ul ul li:hover > a {
+  color: #903;
+  text-decoration: underline; }
+
+#asu_universal_nav > ul > li:hover > a {
+  color: #903;
+  text-decoration: underline; }
+
+#asu_universal_nav > ul > li.parent > a {
+  background: transparent url(../images/asu_arrow_closed.gif) 100% 55% no-repeat;
+  padding-right: 23px; }
+
+#asu_universal_nav > ul > li.parent:hover > a {
+  background: white url(../images/asu_arrow_open.gif) 100% 55% no-repeat;
+  -moz-box-shadow: 3px 0px 3px -3px #999, -3px 0px 3px -3px #999;
+  -webkit-box-shadow: 3px 0px 3px -3px #999, -3px 0px 3px -3px #999;
+  box-shadow: 3px 0px 3px -3px #999, -3px 0px 3px -3px #999;
+  /* IE8 and lower */
+  zoom: 1;
+  filter: progid:DXImageTransform.Microsoft.Shadow(color=#dddddd,direction=90,strength=5), progid:DXImageTransform.Microsoft.Shadow(color=#dddddd,direction=270,strength=5); }
+
+#asu_universal_nav li.parent ul li a.border {
+  border-bottom: 1px dotted #a6a6a6;
+  margin-bottom: 12px;
+  padding-bottom: 12px; }
+
+#asu_universal_nav img.asu_touch {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  display: none;
+  z-index: -1; }
+
+#asu_universal_nav ul:hover + img.asu_touch {
+  display: block; }
+
+/* ----{ Sign-In Links }---- */
+#asu_login_module {
+  border-left: 1px solid #999;
+  margin: 8px 0 0 8px;
+  padding: 0 0 0 8px;
+  float: right;
+  display: inline-block; }
+
+#asu_login_module li {
+  color: #000;
+  font-weight: bold;
+  line-height: 1em;
+  float: left;
+  list-style-type: none;
+  margin: 0;
+  padding: 0 .41em;
+  font-family: Arial, Helvetica, sans-serif; }
+
+#asu_login_module li.end {
+  text-transform: uppercase;
+  padding-right: 0; }
+
+#asu_login_module li a {
+  text-decoration: none;
+  line-height: 1em; }
+
+#asu_login_module li a:hover {
+  text-decoration: underline; }
+
+/* ----{ Search Module }---- */
+#asu_search_module {
+  clear: right;
+  float: right;
+  margin: 0;
+  padding: 0;
+  position: relative;
+  top: 6px; }
+
+#asu_hdr .hidden,
+#asu_search_module .search_range legend {
+  visibility: visible;
+  display: none; }
+
+#asu_search_module input.asu_search_box {
+  background-color: #fff;
+  background-image: none;
+  border: 0 none;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
+  width: 180px;
+  height: 22px;
+  margin: 00;
+  padding: 1px 0 0 6px;
+  vertical-align: middle;
+  font: 11px/15px Arial, Helvetica, sans-serif;
+  color: #333; }
+
+#asu_search_module input.asu_search_button,
+#asu_search_module input[type="submit"] {
+  position: absolute;
+  top: 5px;
+  right: 6px;
+  background: transparent url(../images/asu_search_btn.png) 0 0 no-repeat;
+  border: 0 none;
+  border-radius: 0 0 0 0;
+  width: 12px;
+  height: 12px;
+  margin: 0;
+  padding: 0;
+  vertical-align: middle;
+  font-size: 0.01px;
+  line-height: 15px;
+  cursor: pointer;
+  text-indent: -9999px; }
+
+#asu_search_module input.asu_search_button:hover,
+#asu_search_module input[type="submit"]:hover {
+  background: transparent url(../images/asu_search_btn.png) 0 -12px no-repeat; }
+
+#asu_search_module .asu_search_selection {
+  background-color: transparent;
+  background-image: none;
+  border: 0 none;
+  display: inline;
+  margin: 0;
+  padding: 0;
+  position: static;
+  text-align: left;
+  vertical-align: middle; }
+
+#asu_search_module .asu_search_selection input {
+  border: 0;
+  margin: -1px 4px 0 2px;
+  vertical-align: middle; }
+
+#asu_search_module .asu_search_selection label {
+  margin: 0 5px 0 3px;
+  cursor: pointer;
+  display: inline;
+  font-weight: normal;
+  font-size: 12px; }
+
+/* =Footer Styles
+--------------------------------------------------------- */
+#asu_footer {
+  font: 12px Arial, Helvetica, sans-serif;
+  display: block;
+  height: 24px;
+  margin: 0;
+  padding: 0 25px 0 0;
+  text-align: right;
+  clear: both; }
+
+#asu_footer li.no-border {
+  border-right: none; }
+
+.asu_black_footer {
+  background-color: #000; }
+
+.asu_dark_grey_footer {
+  background-color: #666; }
+
+.asu_light_grey_footer {
+  background-color: #999; }
+
+#asu_footer ul {
+  margin: 0;
+  padding: 0; }
+
+#asu_footer li {
+  border-right: 1px solid #fff;
+  display: inline;
+  list-style-type: none;
+  font: normal 12px/24px Arial, sans-serif;
+  color: #fff;
+  margin: 0;
+  padding: 0; }
+
+#asu_footer li a {
+  color: #fff;
+  text-decoration: none;
+  padding: 0 8px; }
+
+#asu_footer li a:hover {
+  color: #ffb310;
+  text-decoration: underline; }
+
+#asu_footer.asu_light_grey_footer li a:hover {
+  color: #903; }
+
+#asu_footer_contact_info {
+  clear: both;
+  text-align: right;
+  margin: 0;
+  padding: 10px 30px 10px 0;
+  font: normal .75em/1.2em Arial, sans-serif;
+  color: #666;
+  background-color: #fff;
+  display: block; }
+
+#asu_footer_contact_info p {
+  font-size: .95em;
+  margin: 0 0 10px 0;
+  padding: 0; }
+
+#asu_footer_contact_info a {
+  color: #903;
+  text-decoration: underline;
+  font-size: inherit; }
+
+#asu_footer_contact_info a:hover {
+  color: #903;
+  text-decoration: underline; }
+
+#asu_footer_contact_info a:visited {
+  color: #666; }
+
+/* myasu tabs */
+#myasu_bar {
+  height: 25px;
+  background-image: url("../images/tab_gradient.jpg");
+  padding-right: 20px;
+  border-top: 2px solid #9A2537; }
+
+#myasu_bar_myasu {
+  float: left;
+  padding-left: 26px; }
+
+#myasu_bar_stuff {
+  float: right; }
+
+#myasu_bar_info {
+  float: right; }
+
+#myasu_bar_profile {
+  float: right; }
+
+#myasu_bar_star {
+  float: right; }
+
+#myasu_bar img {
+  border: 0; }
+
+/* myasu footer */
+#my_asu_footer {
+  background: #FFF;
+  border-top: 2px #CCC solid;
+  font-family: Arial,Helvetica,sans-serif;
+  margin: 0 20px 20px;
+  padding: 20px 0 0; }
+
+#my_asu_footer div.block-left {
+  float: left;
+  margin: 0 20px;
+  width: 175px; }
+
+#my_asu_footer div.block-left h2 {
+  border: none;
+  font-size: 2.5em;
+  line-height: 1em;
+  font-weight: bold;
+  letter-spacing: -.05em;
+  margin: 0 0 0 0;
+  padding: 0 0 0 0;
+  text-transform: none; }
+
+#my_asu_footer div.block-left h2 a {
+  color: #999;
+  text-decoration: underline; }
+
+#my_asu_footer div.block-left p {
+  color: #666;
+  padding: 2px 0 0 0;
+  margin: 0 0 0 0; }
+
+#my_asu_footer ul.multicolumn-menu {
+  float: left;
+  padding: 0;
+  margin: 0; }
+
+#my_asu_footer ul.multicolumn-menu li {
+  list-style-type: none;
+  list-style-image: none; }
+
+#my_asu_footer ul.multicolumn-menu li a {
+  color: #333;
+  font-weight: bold;
+  text-decoration: none; }
+
+#my_asu_footer ul.multicolumn-menu li.expanded {
+  float: left;
+  text-transform: lowercase;
+  width: 135px; }
+
+#my_asu_footer ul.multicolumn-menu li ul.menu {
+  margin: 0;
+  padding: 0; }
+
+#my_asu_footer ul.multicolumn-menu li ul.menu li {
+  margin: 0;
+  padding: 2px 0 0 0; }
+
+#my_asu_footer ul.multicolumn-menu li ul.menu li a {
+  color: #666;
+  font-weight: normal; }
+
+#my_asu_footer ul.multicolumn-menu li ul.menu li a:hover {
+  color: #000; }
+
+/** Gold **/
+#asu_hdr.asu_hdr_gold {
+  position: relative;
+  background: #ffcb66; }
+
+.asu_hdr_gold #asu_logo a {
+  color: #000; }
+
+.asu_hdr_gold #asu_login_module li {
+  color: #666; }
+
+.asu_hdr_gold #asu_login_module li a {
+  color: #000; }
+
+.asu_hdr_gold #asu_login_module li a:hover {
+  color: #990033; }
+
+.asu_hdr_gold #asu_universal_nav li,
+.asu_hdr_gold #asu_universal_nav li a {
+  color: #000; }
+
+.asu_hdr_gold #asu_universal_nav li a:hover {
+  text-decoration: underline;
+  color: #903; }
+
+/** White **/
+#asu_hdr.asu_hdr_white {
+  position: relative;
+  background: #fff; }
+
+.asu_hdr_white #asu_logo a {
+  color: #000; }
+
+.asu_hdr_white #asu_login_module li {
+  color: #000; }
+
+.asu_hdr_white #asu_login_module li a,
+.asu_hdr_white #asu_login_module li a:hover {
+  color: #000; }
+
+.asu_hdr_white #asu_universal_nav li,
+.asu_hdr_white #asu_universal_nav li a {
+  color: #000; }
+
+.asu_hdr_white #asu_search_module input.asu_search_box {
+  background-color: #efefef; }
+
+/** Maroon **/
+#asu_hdr.asu_hdr_maroon {
+  position: relative;
+  background: #860025; }
+
+.asu_hdr_maroon #asu_logo a {
+  color: #fff; }
+
+.asu_hdr_maroon #asu_login_module li {
+  color: #fff; }
+
+.asu_hdr_maroon #asu_login_module li a,
+.asu_hdr_maroon #asu_login_module li a:hover {
+  color: #fff; }
+
+.asu_hdr_maroon .asu_search_selection {
+  color: #fff; }
+
+.asu_hdr_maroon #asu_universal_nav li {
+  color: #fff; }
+
+.asu_hdr_maroon #asu_universal_nav li a:link,
+.asu_hdr_maroon #asu_universal_nav li a:visited {
+  color: #fff; }
+
+.asu_hdr_maroon #asu_universal_nav li a:hover,
+.asu_hdr_maroon #asu_universal_nav li a:active {
+  color: #fff; }
+
+.asu_hdr_maroon #asu_universal_nav > ul > li.parent:hover > a,
+.asu_hdr_maroon #asu_universal_nav li.parent:hover,
+.asu_hdr_maroon #asu_universal_nav li.parent a:hover,
+.asu_hdr_maroon #asu_universal_nav li li,
+.asu_hdr_maroon #asu_universal_nav li li a:link,
+.asu_hdr_maroon #asu_universal_nav li li a:visited,
+.asu_hdr_maroon #asu_universal_nav li li a:hover,
+.asu_hdr_maroon #asu_universal_nav li li a:active {
+  color: #000; }
+
+.asu_hdr_maroon #asu_universal_nav > ul > li.parent > a {
+  background-image: url(../images/asu_white_arrow_closed.gif); }
+
+.asu_hdr_maroon #asu_universal_nav > ul > li.parent:hover > a {
+  background-image: url(../images/asu_arrow_open.gif); }
+
+/** Black **/
+#asu_hdr.asu_hdr_black {
+  position: relative;
+  background: #000; }
+
+.asu_hdr_black #asu_logo a {
+  color: #fff; }
+
+.asu_hdr_black #asu_login_module li {
+  color: #fff; }
+
+.asu_hdr_black #asu_login_module li a,
+.asu_hdr_black #asu_login_module li a:hover {
+  color: #fff; }
+
+.asu_hdr_black .asu_search_selection {
+  color: #fff; }
+
+.asu_hdr_black #asu_universal_nav li {
+  color: #fff; }
+
+.asu_hdr_black #asu_universal_nav li a:link,
+.asu_hdr_black #asu_universal_nav li a:visited {
+  color: #fff; }
+
+.asu_hdr_black #asu_universal_nav li a:hover,
+.asu_hdr_black #asu_universal_nav li a:active {
+  color: #fff; }
+
+.asu_hdr_black #asu_universal_nav > ul > li.parent:hover > a,
+.asu_hdr_black #asu_universal_nav li.parent:hover,
+.asu_hdr_black #asu_universal_nav li.parent a:hover,
+.asu_hdr_black #asu_universal_nav li li,
+.asu_hdr_black #asu_universal_nav li li a:link,
+.asu_hdr_black #asu_universal_nav li li a:visited,
+.asu_hdr_black #asu_universal_nav li li a:hover,
+.asu_hdr_black #asu_universal_nav li li a:active {
+  color: #000; }
+
+.asu_hdr_black #asu_universal_nav > ul > li.parent > a {
+  background-image: url(../images/asu_white_arrow_closed.gif); }
+
+.asu_hdr_black #asu_universal_nav > ul > li.parent:hover > a {
+  background-image: url(../images/asu_arrow_open.gif); }
+
+/* Universal Print Styles */
+@media print {
+  /* hide header, nav, search, and footer */
+  #asu_logo, #asu_nav_wrapper, #asu_search_module, #asu_footer {
+    display: none; }
+
+  #asu_print_logo {
+    display: block; }
+
+  #asu_footer_contact_info {
+    border-top: thin solid #ccc;
+    margin: .25in 0 .1in 0;
+    font-size: 90%;
+    line-height: 1.1em; } }
+/* =RESPONSIVE MEDIA QUERIES
+-------------------------------------------------------------- */
+/* ----------- 930px ----------- */
+@media only screen and (max-width: 930px) {
+  /* Remove height from header */
+  #asu_hdr {
+    padding-right: 0;
+    height: auto; }
+
+  /* Put height on secondary "mobile" header div */
+  #asu_mobile_hdr {
+    position: relative;
+    display: block;
+    width: 100%;
+    height: 60px; }
+
+  /* Provide hide/show styles for menu button */
+  #asu_mobile_button.asuhide {
+    display: none; }
+
+  #asu_mobile_button.asushow {
+    display: block; }
+
+  /* -- Menu button -- */
+  #asu_mobile_button {
+    display: block;
+    background: transparent url(../images/asu_mobile_menu_bttn.png) no-repeat 0 0;
+    position: absolute;
+    top: 20px;
+    right: 21px;
+    width: 27px;
+    height: 19px; }
+
+  #asu_mobile_button:hover {
+    background: transparent url(../images/asu_mobile_menu_bttn.png) no-repeat 0 -16px; }
+
+  #asu_mobile_button a {
+    display: block;
+    width: 27px;
+    height: 19px;
+    overflow: hidden;
+    letter-spacing: -20px;
+    text-indent: -9999px;
+    text-decoration: none;
+    border-bottom: none;
+    cursor: pointer; }
+
+  /* --- Mobile menu --- */
+  #asu_mobile_menu {
+    position: relative;
+    clear: both;
+    background-color: #292929;
+    color: #e8e8e8;
+    display: block;
+    overflow: hidden;
+    height: 0;
+    -webkit-transition: height 0.35s ease 0s;
+    -moz-transition: height 0.35s ease 0s;
+    -ms-transition: height 0.35s ease 0s;
+    -o-transition: height 0.35s ease 0s;
+    transition: height 0.35s ease 0s; }
+
+  #asu_mobile_menu.toggle_off {
+    display: none;
+    height: 0; }
+
+  #asu_mobile_menu.toggle_on {
+    display: block;
+    height: 200px; }
+
+  /* --- */
+  #asu_nav_wrapper {
+    float: none;
+    margin: 0;
+    max-width: 100%; }
+
+  #asu_nav_menu {
+    float: none;
+    display: block; }
+
+  #asu_universal_nav ul {
+    display: block;
+    margin: 0;
+    padding: 0; }
+
+  #asu_universal_nav ul ul,
+  #asu_universal_nav ul li:hover > ul {
+    display: none; }
+
+  #asu_universal_nav li {
+    display: inline-block; }
+
+  #asu_universal_nav > ul > li {
+    display: inline-block;
+    border-right: 1px solid #373737;
+    border-bottom: 1px solid #373737;
+    width: 49.75%;
+    z-index: 100; }
+
+  #asu_universal_nav > ul > li.parent > a {
+    background-image: url(../images/asu_mobile_icns.png);
+    padding-right: 0; }
+
+  #asu_universal_nav > ul > li.parent:hover > a {
+    background-color: #1d1d1d;
+    background-image: url(../images/asu_mobile_icns.png);
+    -moz-box-shadow: none;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    filter: none; }
+
+  #asu_universal_nav ul li a {
+    background-color: #292929;
+    background-image: url(../images/asu_mobile_icns.png);
+    background-repeat: no-repeat;
+    margin: 0;
+    padding: 18px 0 18px 45px;
+    font-weight: normal;
+    font-size: 14px;
+    text-decoration: none;
+    color: #c8c8c8; }
+
+  .asu_hdr_maroon #asu_universal_nav > ul > li.parent > a,
+  .asu_hdr_maroon #asu_universal_nav > ul > li.parent:hover > a,
+  .asu_hdr_black #asu_universal_nav > ul > li.parent > a,
+  .asu_hdr_black #asu_universal_nav > ul > li.parent:hover > a {
+    background-image: url(../images/asu_mobile_icns.png); }
+
+  #asu_universal_nav ul li.home a {
+    background-position: 16px 12px; }
+
+  #asu_universal_nav > ul > li.colleges > a,
+  #asu_universal_nav > ul > li.colleges:hover > a {
+    background-position: 16px -38px; }
+
+  #asu_universal_nav ul li.contact a {
+    background-position: 16px -88px; }
+
+  #asu_universal_nav ul li.myasu a {
+    background-position: 16px -136px; }
+
+  #asu_universal_nav > ul > li.map a,
+  #asu_universal_nav > ul > li.map:hover a {
+    background-position: 16px -186px; }
+
+  #asu_universal_nav ul ul li:hover > a,
+  #asu_universal_nav > ul > li:hover > a,
+  #asu_universal_nav ul li a:hover {
+    background-color: #1d1d1d;
+    color: #c8c8c8; }
+
+  /* --- Sign In/Out Link --- */
+  #asu_login_module {
+    position: absolute;
+    right: 4px;
+    top: 96px;
+    border-left: 0 none;
+    border-bottom: 1px solid #373737;
+    display: block;
+    float: none;
+    width: 49.75%;
+    margin: 0;
+    padding: 0; }
+
+  #asu_login_module li {
+    float: none;
+    padding-left: 0; }
+
+  #asu_login_module li a {
+    background: transparent url(../images/asu_mobile_icns.png) no-repeat 16px -237px;
+    margin: 0;
+    padding: 18px 0 18px 45px;
+    font-size: 14px;
+    font-weight: normal;
+    text-transform: capitalize;
+    color: #c8c8c8; }
+
+  #asu_login_module li a:hover {
+    background-color: #1d1d1d; }
+
+  /* Must precede li#asu_hdr_ssi rule */
+  #asu_login_module li:first-child {
+    display: none; }
+
+  /* Must follow li:first-child rule */
+  #asu_login_module li#asu_hdr_ssi,
+  #asu_login_module li#asu_hdr_sso {
+    display: block; }
+
+  #asu_login_module li#asu_hdr_ssi a,
+  #asu_login_module li#asu_hdr_sso a {
+    display: block; }
+
+  /* --- Search --- */
+  #asu_search {
+    clear: both;
+    color: #c8c8c8; }
+
+  #asu_search_module {
+    clear: both;
+    float: none;
+    position: static;
+    top: 0; }
+
+  #asu_search_module input.asu_search_box {
+    background: #292929 url(../images/asu_mobile_icns.png) no-repeat 16px -287px;
+    border: 0 none;
+    width: 86%;
+    max-width: 100%;
+    height: auto;
+    margin: 0;
+    padding: 18px 0 18px 45px;
+    color: #c8c8c8;
+    font-weight: normal;
+    font-size: 14px;
+    text-decoration: none; }
+
+  #asu_search_module form:hover,
+  #asu_search_module form:hover input.asu_search_box {
+    background-color: #1d1d1d; }
+
+  input.asu_search_button,
+  #asu_search_module input[type="submit"] {
+    display: none; }
+
+  /* Remove scoped search buttons */
+  #asu_search_module .asu_search_selection {
+    display: none; }
+
+  /* Gold */
+  #asu_hdr.asu_hdr_gold {
+    background-color: transparent; }
+
+  #asu_hdr.asu_hdr_gold #asu_mobile_hdr {
+    background-color: #ffcb66; }
+
+  .asu_hdr_gold #asu_login_module li,
+  .asu_hdr_gold #asu_login_module li a,
+  .asu_hdr_gold #asu_universal_nav li,
+  .asu_hdr_gold #asu_universal_nav li a,
+  .asu_hdr_gold #asu_login_module li a:hover,
+  .asu_hdr_gold #asu_universal_nav li a:hover {
+    color: #c8c8c8;
+    text-decoration: none; }
+
+  /* Maroon */
+  #asu_hdr.asu_hdr_maroon {
+    background-color: transparent; }
+
+  #asu_hdr.asu_hdr_maroon #asu_mobile_hdr {
+    background-color: #860025; }
+
+  .asu_hdr_maroon #asu_login_module li,
+  .asu_hdr_maroon #asu_login_module li a,
+  .asu_hdr_maroon #asu_universal_nav li,
+  .asu_hdr_maroon #asu_universal_nav li a,
+  .asu_hdr_maroon #asu_login_module li a:hover,
+  .asu_hdr_maroon #asu_universal_nav li a:hover {
+    color: #c8c8c8;
+    text-decoration: none; }
+
+  .asu_hdr_maroon #asu_mobile_button {
+    background: transparent url(../images/asu_mobile_menu_bttn_wht.png) no-repeat 0 0; }
+
+  .asu_hdr_maroon #asu_mobile_button:hover {
+    background: transparent url(../images/asu_mobile_menu_bttn_wht.png) no-repeat 0 -16px; }
+
+  /* White */
+  #asu_hdr.asu_hdr_white {
+    background-color: transparent; }
+
+  #asu_hdr.asu_hdr_white #asu_mobile_hdr {
+    background-color: #fff; }
+
+  .asu_hdr_white #asu_login_module li,
+  .asu_hdr_white #asu_login_module li a,
+  .asu_hdr_white #asu_universal_nav li,
+  .asu_hdr_white #asu_universal_nav li a,
+  .asu_hdr_white #asu_login_module li a:hover,
+  .asu_hdr_white #asu_universal_nav li a:hover {
+    color: #c8c8c8;
+    text-decoration: none; }
+
+  .asu_hdr_white #asu_search_module input.asu_search_box {
+    background-color: #292929; }
+
+  /* Black */
+  #asu_hdr.asu_hdr_black {
+    background-color: transparent; }
+
+  #asu_hdr.asu_hdr_black #asu_mobile_hdr {
+    background-color: #000; }
+
+  .asu_hdr_black #asu_login_module li,
+  .asu_hdr_black #asu_login_module li a,
+  .asu_hdr_black #asu_universal_nav li,
+  .asu_hdr_black #asu_universal_nav li a,
+  .asu_hdr_black #asu_login_module li a:hover,
+  .asu_hdr_black #asu_universal_nav li a:hover {
+    color: #c8c8c8;
+    text-decoration: none; }
+
+  .asu_hdr_black #asu_mobile_button {
+    background: transparent url(../images/asu_mobile_menu_bttn_wht.png) no-repeat 0 0; }
+
+  .asu_hdr_black #asu_mobile_button:hover {
+    background: transparent url(../images/asu_mobile_menu_bttn_wht.png) no-repeat 0 -16px; } }
+/* ----------- 768px ----------- */
+@media only screen and (max-width: 768px) {
+  /* Decrease header height to 40px */
+  #asu_mobile_hdr {
+    height: 40px; }
+
+  /* Switch to smaller mobile logo */
+  #asu_logo a img {
+    display: none; }
+
+  #asu_logo {
+    padding-top: 4px;
+    padding-left: 10px; }
+
+  #asu_logo a {
+    background-color: transparent;
+    background-position: left top;
+    background-repeat: no-repeat;
+    background-image: url(../images/logos/asu_logo_mobile_gold.png);
+    display: block;
+    width: 77px;
+    height: 32px;
+    margin-top: 0; }
+
+  #asu_hdr.asu_hdr_white #asu_logo a {
+    background-image: url(../images/logos/asu_logo_mobile_white.png); }
+
+  #asu_hdr.asu_hdr_maroon #asu_logo a {
+    background-image: url(../images/logos/asu_logo_maroon.png); }
+
+  #asu_hdr.asu_hdr_black #asu_logo a {
+    background-image: url(../images/logos/asu_logo_black.png); }
+
+  /* Move menu button */
+  #asu_mobile_button {
+    top: 10px; }
+
+  /* Footer transition to mobile */
+  #asu_footer {
+    height: auto;
+    padding: 8px 0 32px 3px;
+    text-align: left; }
+
+  #asu_footer li {
+    border-right: none;
+    display: block;
+    font-size: 15px;
+    font-weight: bold; } }
+/* ----------- 410px ----------- */
+@media only screen and (max-width: 410px) {
+  #asu_universal_nav > ul > li {
+    width: 49.65%; } }
+/* ----------- 360px ----------- */
+@media only screen and (max-width: 360px) {
+  #asu_universal_nav ul li a,
+  #asu_login_module li a,
+  #asu_search_module input.asu_search_box {
+    padding: 18px 0 18px 38px;
+    font-size: 12px; }
+
+  #asu_universal_nav ul li.home a {
+    background-position: 10px 12px; }
+
+  #asu_universal_nav > ul > li.colleges > a,
+  #asu_universal_nav > ul > li.colleges:hover > a {
+    background-position: 10px -38px; }
+
+  #asu_universal_nav ul li.contact a {
+    background-position: 10px -88px; }
+
+  #asu_universal_nav ul li.myasu a {
+    background-position: 10px -136px; }
+
+  #asu_universal_nav > ul > li.map a,
+  #asu_universal_nav > ul > li.map:hover a {
+    background-position: 10px -186px; }
+
+  #asu_login_module li a {
+    background-position: 10px -237px; }
+
+  #asu_search_module input.asu_search_box {
+    background-position: 10px -287px; }
+
+  #asu_login_module {
+    top: 98px; } }

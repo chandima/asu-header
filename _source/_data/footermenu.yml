@@ -1,0 +1,18 @@
+--- # ASU footer menu items
+- text: "Copyright & Trademark"
+  target: _top
+  href: "http://www.asu.edu/copyright/"
+  class: first
+- text: "Accessibility"
+  target: _top
+  href: "http://www.asu.edu/accessibility/"
+- text: "Privacy"
+  target: _top
+  href: "http://www.asu.edu/privacy/"
+- text: "Emergency"
+  target: _top
+  href: "http://www.asu.edu/emergency/"
+- text: "Contact ASU"
+  target: _top
+  href: "http://www.asu.edu/contactasu/"
+  class: last no-border

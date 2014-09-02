@@ -1,0 +1,111 @@
+<!-- START /asuthemes/4.0-rsp-up.0/headers/default.shtml -->
+
+<div id="asu_hdr" {% if site.headerclass %}class="{{ site.headerclass }}"{% else %}class="asu_hdr_gold"{% endif %}>
+   
+  <div id="asu_mobile_menu" class="toggle_off">
+
+    <div id="asu_nav_wrapper">
+
+      <h2 class="hidden">Sign In / Sign Out</h2>
+      <ul id="asu_login_module">
+                 <li id="asu_hdr_ssi" class="end">
+             <a target="_top" href="https://weblogin.asu.edu/cgi-bin/login"
+                  onmouseover="this.href = ASUHeader.alterLoginHref(this.href);"
+                  onfocus="this.href = ASUHeader.alterLoginHref(this.href);"
+                  onclick="this.href = ASUHeader.alterLoginHref(this.href);">Sign In</a>
+           </li>
+            </ul> 
+
+      <div id="asu_nav_menu">
+        <h2 class="hidden">Menu</h2>
+        <div id="asu_universal_nav">
+        
+        <ul>
+          {% for menuitem in site.data.headermenu %}
+            <li {% if menuitem.class %}class="{{ menuitem.class }}"{% endif %}>
+              <a {% if menuitem.target %}target="{{ menuitem.target }}"{% endif %} {% if menuitem.title %}title="{{ menuitem.title }}"{% endif %} href="{{ menuitem.href }}">
+                {{ menuitem.text | xml_escape }}
+              </a>
+              {% if menuitem.submenu %}
+                <ul>
+                {% for submenuitem in menuitem.submenu %}
+                  <li>
+                    <a {% if submenuitem.target %}target="{{ submenuitem.target }}"{% endif %} {% if submenuitem.title %}title="{{ submenuitem.title }}"{% endif %} {% if submenuitem.class %}class="{{ submenuitem.class }}"{% endif %} href="{{ submenuitem.href }}">
+                      {{ submenuitem.text | xml_escape }}
+                    </a>
+                  </li>
+                {% endfor %}
+                </ul>
+              {% endif %}
+            </li>
+          {% endfor %}
+          </ul>
+
+        
+        
+        <img class="asu_touch" src="images/ipad_close.gif" alt="" />
+                
+          </div><!-- /#asu_universal_nav -->
+      </div><!-- /#asu_nav_menu -->    
+  </div><!-- /#asu_nav_wrapper -->
+  
+    <div id="asu_search">
+      <h2 class="hidden">Search</h2>
+      <div id="asu_search_module"><form target="_top" action="https://search.asu.edu/search" method="get" name="gs">
+  <label class="hidden" for="asu_search_box">Search</label>
+      <input name="site" value="default_collection" type="hidden" />
+    <input type="text" name="q" size="32" value="Search ASU" id="asu_search_box" class="asu_search_box" onfocus="ASUHeader.searchFocus(this)" onblur="ASUHeader.searchBlur(this)" /> 
+  <input type="submit" value="Search" title="Search" class="asu_search_button" />
+  <input name="sort" value="date:D:L:d1" type="hidden" /> 
+  <input name="output" value="xml_no_dtd" type="hidden" /> 
+  <input name="ie" value="UTF-8" type="hidden" /> 
+  <input name="oe" value="UTF-8" type="hidden" /> 
+  <input name="client" value="asu_frontend" type="hidden" /> 
+  <input name="proxystylesheet" value="asu_frontend" type="hidden" />
+</form></div><!-- /#asu_search_module -->
+  </div><!-- /#asu_search -->      
+         
+  </div><!-- /#asu_mobile_menu -->
+
+  <div id="asu_mobile_hdr">
+    <div id="asu_logo">
+          <a target="_top" href="http://www.asu.edu/" title="Arizona State University">
+            <img src="images/logos/asu_logo.png" alt="Arizona State University" height="32" width="203" style="margin-top:14px" title="Arizona State University" />
+          </a>
+    </div><!-- /#asu_logo  -->
+    <img src="images/logos/asu_logo_white.png" height="32" width="203" id="asu_print_logo" />
+    <div id="asu_mobile_button" class="asuhide"><a href="javascript:toggleASU();">Menu</a></div> 
+  </div><!-- /#asu_mobile_header  -->
+    
+</div><!-- /#asu_hdr -->
+
+
+<script type="text/javascript">
+<!--//--><![CDATA[//><!--
+ASUHeader.default_search_text = "Search ASU";
+ASUHeader.default_search_alttext = "Search ASU";
+if (typeof ASUHeader.signin_callback_url == "undefined") {
+  ASUHeader.signin_callback_url = '';
+}
+if (typeof ASUHeader.signin_url == "undefined") {
+  ASUHeader.signin_url = '';
+}
+if (typeof ASUHeader.signout_url == "undefined") {
+  ASUHeader.signout_url = 'https://webapp4.asu.edu/myasu/Signout';
+}
+if (typeof ASUHeader.user_signedin == "undefined" ||
+    (ASUHeader.user_signedin != false && typeof ASUHeader.user_displayname == "undefined")) {
+  ASUHeader.checkSSOCookie();
+}
+if (ASUHeader.user_signedin == true) {
+  ASUHeader.setSSOLink();
+}if (navigator.userAgent.toLowerCase().indexOf('chrome') > -1) {
+    document.getElementById('asu_hdr').className = document.getElementById('asu_hdr').className+" chrome";
+}
+//--><!]]>
+</script>
+
+
+<div style="clear:both;"></div>
+
+<!-- END /asuthemes/4.0-rsp-up.0/headers/default.shtml -->
