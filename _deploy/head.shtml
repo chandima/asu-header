@@ -1,6 +1,5 @@
 <!-- START /asuthemes/4.0-rsp-up.0/heads/default.shtml -->
 
-<link rel="stylesheet" href="css/asu_header.css">
 <!--[if lte IE 8]>
 <style type="text/css">
   #asu_hdr.asu_responsive {min-width:938px;}
@@ -49,7 +48,5 @@ _gaq.push(['asu._trackPageview']);
 var ASUHeader = ASUHeader || {};
 //--><!]]>
 </script>
-
-<script type="text/javascript" src="js/asu_header.js"></script>
 
 <!-- END /asuthemes/4.0-rsp-up.0/heads/default.shtml -->
